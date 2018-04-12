@@ -52,6 +52,9 @@
 		6148F728207C56B7002816A0 /* WGSharedMacr.m in Sources */ = {isa = PBXBuildFile; fileRef = 6148F727207C56B7002816A0 /* WGSharedMacr.m */; };
 		614D2E8A207D9C920049412D /* nav_back_btn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 614D2E88207D9C910049412D /* nav_back_btn@3x.png */; };
 		614D2E8B207D9C920049412D /* nav_back_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 614D2E89207D9C910049412D /* nav_back_btn@2x.png */; };
+		616E86AC207EF1070042B7AD /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616E86AA207EF1070042B7AD /* WelcomeViewController.swift */; };
+		616E86AD207EF1070042B7AD /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 616E86AB207EF1070042B7AD /* WelcomeViewController.xib */; };
+		616E86AF207EF24F0042B7AD /* up_welcome_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 616E86AE207EF24F0042B7AD /* up_welcome_bg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +150,10 @@
 		6148F727207C56B7002816A0 /* WGSharedMacr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGSharedMacr.m; sourceTree = "<group>"; };
 		614D2E88207D9C910049412D /* nav_back_btn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_back_btn@3x.png"; sourceTree = "<group>"; };
 		614D2E89207D9C910049412D /* nav_back_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_back_btn@2x.png"; sourceTree = "<group>"; };
+		616E86A9207EF1060042B7AD /* factory-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "factory-Bridging-Header.h"; sourceTree = "<group>"; };
+		616E86AA207EF1070042B7AD /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		616E86AB207EF1070042B7AD /* WelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
+		616E86AE207EF24F0042B7AD /* up_welcome_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up_welcome_bg.png; sourceTree = "<group>"; };
 		7AC4E8AB7C837B229B019898 /* Pods-factory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-factory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-factory/Pods-factory.debug.xcconfig"; sourceTree = "<group>"; };
 		D1EF45937BAA5233F3BB9028 /* libPods-factory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-factory.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -195,6 +202,7 @@
 				16190B5B2046386E00214999 /* tabbar_homepage_icon_selected@3x.png */,
 				614D2E89207D9C910049412D /* nav_back_btn@2x.png */,
 				614D2E88207D9C910049412D /* nav_back_btn@3x.png */,
+				616E86AE207EF24F0042B7AD /* up_welcome_bg.png */,
 			);
 			path = MainImgs;
 			sourceTree = "<group>";
@@ -310,6 +318,9 @@
 				16190B46204636E700214999 /* SecondViewController.m */,
 				16190B48204636F700214999 /* ThirdViewController.h */,
 				16190B49204636F700214999 /* ThirdViewController.m */,
+				616E86AA207EF1070042B7AD /* WelcomeViewController.swift */,
+				616E86AB207EF1070042B7AD /* WelcomeViewController.xib */,
+				616E86A9207EF1060042B7AD /* factory-Bridging-Header.h */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -497,6 +508,7 @@
 				TargetAttributes = {
 					164F64E0203EA14000E14A68 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					164F64F8203EA14100E14A68 = {
@@ -541,7 +553,9 @@
 				614D2E8B207D9C920049412D /* nav_back_btn@2x.png in Resources */,
 				16190B662046386E00214999 /* tabbar_homepage_icon_selected@2x.png in Resources */,
 				1646D70920512FDE009B2A09 /* KeyboardViewController.xib in Resources */,
+				616E86AD207EF1070042B7AD /* WelcomeViewController.xib in Resources */,
 				164F64F1203EA14000E14A68 /* LaunchScreen.storyboard in Resources */,
+				616E86AF207EF24F0042B7AD /* up_welcome_bg.png in Resources */,
 				16190B5D2046386E00214999 /* tabbar_discovery_icon@2x.png in Resources */,
 				16190B5F2046386E00214999 /* tabbar_me_icon@3x.png in Resources */,
 				164F64EE203EA14000E14A68 /* Assets.xcassets in Resources */,
@@ -631,6 +645,7 @@
 				6148F725207C54AC002816A0 /* WGUser.m in Sources */,
 				610612902079F553006D333D /* WGResponse.m in Sources */,
 				610612962079FF3B006D333D /* WGEnum.m in Sources */,
+				616E86AC207EF1070042B7AD /* WelcomeViewController.swift in Sources */,
 				164F64E6203EA14000E14A68 /* AppDelegate.m in Sources */,
 				16C2495220439082000C4471 /* WGScrollView.m in Sources */,
 				6106129E207A0296006D333D /* TAlertView.m in Sources */,
@@ -808,6 +823,7 @@
 			baseConfigurationReference = 7AC4E8AB7C837B229B019898 /* Pods-factory.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KG4MGNCQRA;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -817,6 +833,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vliour.xmay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "factory/Modules/factory-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -826,6 +845,7 @@
 			baseConfigurationReference = 2308DB06B4B3A64999742163 /* Pods-factory.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KG4MGNCQRA;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -835,6 +855,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vliour.xmay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "factory/Modules/factory-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -842,6 +864,7 @@
 		164F6511203EA14100E14A68 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = factoryTests/Info.plist;
@@ -856,6 +879,7 @@
 		164F6512203EA14100E14A68 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = factoryTests/Info.plist;
@@ -870,6 +894,7 @@
 		164F6514203EA14100E14A68 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = factoryUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -883,6 +908,7 @@
 		164F6515203EA14100E14A68 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = factoryUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

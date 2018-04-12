@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeViewController" customModule="factory" customModuleProvider="target">
+            <connections>
+                <outlet property="btnView" destination="ygj-Ue-1fJ" id="U8X-ny-9kq"/>
+                <outlet property="loginBtn" destination="zaC-TD-dpM" id="baO-tS-ncX"/>
+                <outlet property="registerBtn" destination="TRY-bV-Lzj" id="WP1-6I-ivX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="up_welcome_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="uUq-CF-IZb">
+                    <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ygj-Ue-1fJ">
+                    <rect key="frame" x="126.66666666666669" y="656" width="160" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zaC-TD-dpM">
+                            <rect key="frame" x="0.0" y="0.0" width="80" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="fpi-rl-fud"/>
+                                <constraint firstAttribute="width" constant="80" id="vRD-o1-Lse"/>
+                            </constraints>
+                            <state key="normal" title="登录">
+                                <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                            </state>
+                            <connections>
+                                <action selector="login:" destination="-1" eventType="touchUpInside" id="NNB-FV-wwD"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRY-bV-Lzj">
+                            <rect key="frame" x="79.999999999999986" y="0.0" width="80.000000000000014" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="QaT-PV-K3r"/>
+                                <constraint firstAttribute="height" constant="50" id="fkZ-GQ-sIb"/>
+                            </constraints>
+                            <state key="normal" title="注册">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="register:" destination="-1" eventType="touchUpInside" id="Zbm-K4-Cn4"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dTa-X3-ibP">
+                            <rect key="frame" x="79.999999999999986" y="10" width="0.3333333333333286" height="30"/>
+                            <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="0.5" id="9Ne-pb-oDC"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="dTa-X3-ibP" firstAttribute="top" secondItem="ygj-Ue-1fJ" secondAttribute="top" constant="10" id="LgK-Sq-eZW"/>
+                        <constraint firstItem="zaC-TD-dpM" firstAttribute="top" secondItem="ygj-Ue-1fJ" secondAttribute="top" id="Mz7-f1-Dia"/>
+                        <constraint firstItem="TRY-bV-Lzj" firstAttribute="top" secondItem="ygj-Ue-1fJ" secondAttribute="top" id="Ux1-Kc-DuG"/>
+                        <constraint firstAttribute="bottom" secondItem="dTa-X3-ibP" secondAttribute="bottom" constant="10" id="WD7-Wn-JXI"/>
+                        <constraint firstAttribute="height" constant="50" id="b8U-X7-dFe"/>
+                        <constraint firstItem="dTa-X3-ibP" firstAttribute="leading" secondItem="ygj-Ue-1fJ" secondAttribute="leading" constant="80" id="iyT-Ys-5sf"/>
+                        <constraint firstAttribute="width" constant="160" id="kHC-de-fwW"/>
+                        <constraint firstItem="zaC-TD-dpM" firstAttribute="leading" secondItem="ygj-Ue-1fJ" secondAttribute="leading" id="pxc-gZ-oPU"/>
+                        <constraint firstAttribute="trailing" secondItem="TRY-bV-Lzj" secondAttribute="trailing" id="z5Z-4x-jY0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uUq-CF-IZb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="IHM-R2-A4F"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="uUq-CF-IZb" secondAttribute="bottom" id="IbV-BA-3HA"/>
+                <constraint firstItem="ygj-Ue-1fJ" firstAttribute="bottom" secondItem="uUq-CF-IZb" secondAttribute="bottom" constant="-30" id="Mox-F2-lhf"/>
+                <constraint firstItem="ygj-Ue-1fJ" firstAttribute="centerX" secondItem="uUq-CF-IZb" secondAttribute="centerX" id="Nwz-rZ-JwZ"/>
+                <constraint firstItem="uUq-CF-IZb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="SyR-px-gDK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uUq-CF-IZb" secondAttribute="trailing" id="xWl-Qb-4Zo"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="up_welcome_bg.png" width="750" height="1334"/>
+    </resources>
+</document>

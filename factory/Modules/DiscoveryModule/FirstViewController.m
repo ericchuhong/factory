@@ -8,6 +8,7 @@
 
 #import "FirstViewController.h"
 #import "NextViewController.h"
+#import "factory-Swift.h"
 @interface FirstViewController ()
 
 @end
@@ -44,7 +45,7 @@
 //
 //                                                                           }];
     
-    NextViewController *vc=[[NextViewController alloc]init];
+    WelcomeViewController *vc=[[WelcomeViewController alloc]init];
     vc.hidesBottomBarWhenPushed=YES;
     [self.navigationController pushViewController:vc animated:YES];
      

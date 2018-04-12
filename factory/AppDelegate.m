@@ -13,6 +13,7 @@
 #import "ThirdViewController.h"
 #import <IQKeyboardManager/IQKeyboardManager.h>
 #import "UIImage+Common.h"
+#import "factory-Swift.h"
 @interface AppDelegate ()
 
 @end
@@ -26,9 +27,16 @@
     self.window=[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
     [self setupViewControllers];
-    [self.window setRootViewController:self.tabBarController];
+    
     UITabBar *tabbar=[UITabBar appearance];
     [tabbar setBackgroundImage:[UIImage imageWithColor:[UIColor blackColor]]];
+    
+    if (SharedData.isLogin) {
+        [self.window setRootViewController:self.tabBarController];
+    }else{
+        WelcomeViewController *vc=[[WelcomeViewController alloc]init];
+        [self.window setRootViewController:vc];
+    }
     
     [self setKeyboardProperty];//设置键盘属性
     self.window.backgroundColor=[UIColor whiteColor];
